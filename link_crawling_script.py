@@ -1,10 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
-url_list = ['https://www.epa.gov/enviro/frs-physical-data-model']
-for url in url_list
+url_list = ['https://www.epa.gov/enviro/frs-physical-data-model','https://www.epa.gov/enviro/sems-model']
+data_dic= {}
+for url in url_list:
 	url_sub_list=[url]
 	for url in url_sub_list:
+		print(url)
 		# Get information for database URL
 		text=requests.get(url).text
 		soup=BeautifulSoup(text,'lxml')	
@@ -15,7 +18,7 @@ for url in url_list
 		table_names = [a.attrs['alt'] for a in areas]
 		table_links = [a.attrs['href'] for a in areas]
 
-		data_dic= {}
+		data_dic[url] = {}
 		table_name_index = 0
 
 		# Find columns in all table names
@@ -26,7 +29,7 @@ for url in url_list
 				print(iteration)
 				iteration+=1
 				text=requests.get(table_link).text
-				data_dic[table_names[table_name_index]] = {}
+				data_dic[url][table_names[table_name_index]] = {}
 
 				soup=BeautifulSoup(text,'lxml')
 				links_list = soup.findAll('a')
@@ -42,7 +45,7 @@ for url in url_list
 					column_name = column[start_column_index:end_column_index]
 					column_names[i] = column_name
 					i+=1
-				data_dic[table_names[table_name_index]]["columns"] = column_names
+				data_dic[url][table_names[table_name_index]]["columns"] = column_names
 				table_name_index += 1
 			else:
 				if (table_link.find("http") != -1):
@@ -50,4 +53,8 @@ for url in url_list
 				else:
 					url_sub_list.append("https://www.epa.gov"+table_link)
 
-		print(data_dic)
+print(data_dic)
+
+filename = "crawling_output.json"
+with open(filename,'w') as f:
+    json.dump(data_dic, f, ensure_ascii=False, indent=4, sort_keys=True)

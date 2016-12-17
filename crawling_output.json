@@ -1,0 +1,729 @@
+{
+    "https://www.epa.gov/enviro/frs-physical-data-model": {
+        "FRS GEOSPATIAL TABLES": {
+            "columns": [
+                "CONTACT_UIN", 
+                "FULL_NAME", 
+                "TITLE", 
+                "DIVISION_NAME", 
+                "PHONE_NUMBER", 
+                "ALTERNATE_PHONE", 
+                "FAX_NUMBER", 
+                "EMAIL_ADDRESS", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "STD_FULL_NAME", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND"
+            ]
+        }, 
+        "FRS_AFFILIATION": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "AFFILIATION_TYPE", 
+                "START_DATE", 
+                "END_DATE", 
+                "ORG_UIN", 
+                "CONTACT_UIN", 
+                "MAIL_UIN", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND", 
+                "SUP_INTEREST_ID", 
+                "AFFILIATION_UIN", 
+                "REGISTRY_ID"
+            ]
+        }, 
+        "FRS_ALTERNATIVE_ID": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "ALTERNATIVE_ID", 
+                "ALTERNATIVE_ID_TYPE", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "FIPS_CODE", 
+                "CREATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND", 
+                "UPDATE_DATE"
+            ]
+        }, 
+        "FRS_ALT_NAME": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "REGISTRY_ID", 
+                "ALTERNATIVE_NAME", 
+                "ALTERNATIVE_NAME_TYPE", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "STD_ALT_NAME", 
+                "CREATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "UPDATE_DATE", 
+                "PUBLIC_IND"
+            ]
+        }, 
+        "FRS_CODE_DESCRIPTION": {
+            "columns": [
+                "FEDERAL_REGISTER", 
+                "ORGANIZATION_CODE", 
+                "TRIBAL_ENTITY_NAME", 
+                "TRIBAL_LAND_R_CODE"
+            ]
+        }, 
+        "FRS_CONTACT": {
+            "columns": [
+                "MAIL_UIN", 
+                "MAILING_ADDRESS", 
+                "SUPPLEMENTAL_ADDRESS", 
+                "CITY_NAME", 
+                "STATE_CODE", 
+                "STATE_NAME", 
+                "POSTAL_CODE", 
+                "COUNTRY_NAME", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "STD_MAIL_ADDRESS", 
+                "STD_SUPPLEMENTAL_ADDRESS", 
+                "STD_CITY_NAME", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND"
+            ]
+        }, 
+        "FRS_FACILTY_SITE": {
+            "columns": [
+                "ADDR_TYPE", 
+                "CITY_NAME", 
+                "COUNTRY_NAME", 
+                "COUNTY_NAME", 
+                "CREATE_DATE", 
+                "DATA_QUALITY_CODE", 
+                "ENV_JUSTICE_CODE", 
+                "EPA_REGION_CODE", 
+                "FEDERAL_AGENCY_CODE", 
+                "FEDERAL_FACILITY_CODE", 
+                "FIPS_CODE", 
+                "ICIS_IDENTIFIER", 
+                "INTEREST_STATUS_CODE", 
+                "LAST_REPORTED_DATE", 
+                "LEGISLATIVE_DIST_NUM", 
+                "LOCATION_ADDRESS", 
+                "LOCATION_DESCRIPTION", 
+                "PARENT_REGISTRY_ID", 
+                "POSTAL_CODE", 
+                "PRIMARY_NAME", 
+                "PUBLIC_IND", 
+                "REGISTRY_ID", 
+                "REVIEW_FLAG", 
+                "REVIEW_REASON", 
+                "SENSITIVE_IND", 
+                "SITE_TYPE_NAME", 
+                "SMALL_BUS_IND", 
+                "STATE_CODE", 
+                "STATE_NAME", 
+                "STD_BASE_NAME", 
+                "STD_CITY_NAME", 
+                "STD_COUNTRY", 
+                "STD_COUNTY_FIPS", 
+                "STD_COUNTY_NAME", 
+                "STD_FULL_ADDRESS", 
+                "STD_HOUSE_NUMBER", 
+                "STD_LOC_ADDRESS", 
+                "STD_NAME", 
+                "STD_POSTAL_CODE", 
+                "STD_PREFIX", 
+                "STD_STATE_CODE", 
+                "STD_STREET_NAME", 
+                "STD_STYPE_AFTER", 
+                "STD_STYPE_BEFORE", 
+                "STD_SUFFIX", 
+                "SUPPLEMENTAL_LOCATION", 
+                "TRIBAL_LAND_CODE", 
+                "TRIBAL_LAND_NAME", 
+                "UPDATE_DATE", 
+                "USER_ID"
+            ]
+        }, 
+        "FRS_INTEREST": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "INTEREST_TYPE", 
+                "FED_STATE_CODE", 
+                "START_DATE", 
+                "START_DATE_QUALIFIER", 
+                "END_DATE", 
+                "END_DATE_QUALIFIER", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND", 
+                "ACTIVE_STATUS"
+            ]
+        }, 
+        "FRS_INTEREST_REF": {
+            "columns": [
+                "INTEREST_TYPE", 
+                "INTEREST_DESC", 
+                "PROGRAM_CATEGORY", 
+                "PROGRAM_CATEGORY_DESC", 
+                "QUERY_FLAG", 
+                "PUBLIC_IND", 
+                "CREATE_DATE", 
+                "UPDATE_DATE"
+            ]
+        }, 
+        "FRS_MAILING_ADDRESS": {
+            "columns": [
+                "ORG_UIN", 
+                "ORG_NAME", 
+                "STD_ORG_NAME", 
+                "ORG_TYPE", 
+                "DUNS_NUMBER", 
+                "DIVISION_NAME", 
+                "PHONE_NUMBER", 
+                "ALTERNATE_PHONE", 
+                "FAX_NUMBER", 
+                "EMAIL_ADDRESS", 
+                "EIN", 
+                "STATE_BUSINESS_ID", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "SENSITIVE_IND", 
+                "USER_ID", 
+                "PUBLIC_IND"
+            ]
+        }, 
+        "FRS_NAICS": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "NAICS_CODE", 
+                "PRIMARY_INDICATOR", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND", 
+                "SUP_INTEREST_ID", 
+                "NAICS_UIN"
+            ]
+        }, 
+        "FRS_ORGANIZATION": {
+            "columns": [
+                "CODE_TYPE", 
+                "CODE_VALUE", 
+                "CODE_DESCRIPTION"
+            ]
+        }, 
+        "FRS_PROGRAM_FACILITY": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "PRIMARY_NAME", 
+                "LOCATION_ADDRESS", 
+                "SUPPLEMENTAL_LOCATION", 
+                "CITY_NAME", 
+                "COUNTY_NAME", 
+                "FIPS_CODE", 
+                "STATE_CODE", 
+                "STATE_NAME", 
+                "COUNTRY_NAME", 
+                "POSTAL_CODE", 
+                "FEDERAL_FACILITY_CODE", 
+                "FEDERAL_AGENCY_CODE", 
+                "TRIBAL_LAND_CODE", 
+                "TRIBAL_LAND_NAME", 
+                "LEGISLATIVE_DIST_NUM", 
+                "EPA_REGION_CODE", 
+                "SITE_TYPE_NAME", 
+                "DATA_QUALITY_CODE", 
+                "LAST_REPORTED_DATE", 
+                "STD_NAME", 
+                "STD_LOC_ADDRESS", 
+                "STD_CITY_NAME", 
+                "STD_COUNTY_NAME", 
+                "ADDR_TYPE", 
+                "LINK_MTHD", 
+                "LOCATION_DESCRIPTION", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "USER_COMMENT", 
+                "REGISTRY_ID", 
+                "PUBLIC_IND", 
+                "REFRESH_DATE", 
+                "SMALL_BUS_IND", 
+                "ENV_JUSTICE_CODE", 
+                "HUC_CODE_12", 
+                "HUC_CODE_8", 
+                "PARENT_PGM_SYS_ID", 
+                "STD_BASE_NAME", 
+                "STD_COUNTRY", 
+                "STD_COUNTY_FIPS", 
+                "STD_FULL_ADDRESS", 
+                "STD_HOUSE_NUMBER", 
+                "STD_POSTAL_CODE", 
+                "STD_PREFIX", 
+                "STD_STATE_CODE", 
+                "STD_STREET_NAME", 
+                "STD_STYPE_AFTER", 
+                "STD_STYPE_BEFORE", 
+                "STD_SUFFIX"
+            ]
+        }, 
+        "FRS_SIC": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "SIC_CODE", 
+                "PRIMARY_INDICATOR", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "SENSITIVE_IND", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "PUBLIC_IND", 
+                "SUP_INTEREST_ID", 
+                "SIC_UIN"
+            ]
+        }, 
+        "FRS_SUPPLEMENTAL_INTEREST": {
+            "columns": [
+                "SUP_INTEREST_ID", 
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "SUP_PGM_SYS_ACRNM", 
+                "SUP_PGM_SYS_ID", 
+                "SUP_INTEREST_TYPE", 
+                "START_DATE", 
+                "START_DATE_QUALIFIER", 
+                "END_DATE", 
+                "END_DATE_QUALIFIER", 
+                "SOURCE_OF_DATA", 
+                "LAST_REPORTED_DATE", 
+                "REPORTED_SUP_INTEREST_TYPE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "PUBLIC_IND"
+            ]
+        }, 
+        "FRS_SYSTEM_REF": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_NAME", 
+                "PGM_SYS_DESC", 
+                "PUBLIC_IND", 
+                "FED_STATE_CODE", 
+                "CREATE_DATE", 
+                "UPDATE_DATE"
+            ]
+        }, 
+        "FRS_TRIBAL_ENTITY_REF": {
+            "columns": [
+                "TRIBAL_LAND_NAME", 
+                "TRIBAL_LAND_R_CODE", 
+                "USBC_TRIBAL_LAND_CODE"
+            ]
+        }, 
+        "FRS_TRIBAL_LAND_REF": {
+            "columns": [
+                "FEDERAL_AGENCY_CODE", 
+                "FEDERAL_AGENCY_NAME"
+            ]
+        }
+    }, 
+    "https://www.epa.gov/enviro/frs-tables-geospatial-model-area": {
+        "FRS_FACILITY_SITE": {
+            "columns": [
+                "ADDR_TYPE", 
+                "CITY_NAME", 
+                "COUNTRY_NAME", 
+                "COUNTY_NAME", 
+                "CREATE_DATE", 
+                "DATA_QUALITY_CODE", 
+                "ENV_JUSTICE_CODE", 
+                "EPA_REGION_CODE", 
+                "FEDERAL_AGENCY_CODE", 
+                "FEDERAL_FACILITY_CODE", 
+                "FIPS_CODE", 
+                "ICIS_IDENTIFIER", 
+                "INTEREST_STATUS_CODE", 
+                "LAST_REPORTED_DATE", 
+                "LEGISLATIVE_DIST_NUM", 
+                "LOCATION_ADDRESS", 
+                "LOCATION_DESCRIPTION", 
+                "PARENT_REGISTRY_ID", 
+                "POSTAL_CODE", 
+                "PRIMARY_NAME", 
+                "PUBLIC_IND", 
+                "REGISTRY_ID", 
+                "REVIEW_FLAG", 
+                "REVIEW_REASON", 
+                "SENSITIVE_IND", 
+                "SITE_TYPE_NAME", 
+                "SMALL_BUS_IND", 
+                "STATE_CODE", 
+                "STATE_NAME", 
+                "STD_BASE_NAME", 
+                "STD_CITY_NAME", 
+                "STD_COUNTRY", 
+                "STD_COUNTY_FIPS", 
+                "STD_COUNTY_NAME", 
+                "STD_FULL_ADDRESS", 
+                "STD_HOUSE_NUMBER", 
+                "STD_LOC_ADDRESS", 
+                "STD_NAME", 
+                "STD_POSTAL_CODE", 
+                "STD_PREFIX", 
+                "STD_STATE_CODE", 
+                "STD_STREET_NAME", 
+                "STD_STYPE_AFTER", 
+                "STD_STYPE_BEFORE", 
+                "STD_SUFFIX", 
+                "SUPPLEMENTAL_LOCATION", 
+                "TRIBAL_LAND_CODE", 
+                "TRIBAL_LAND_NAME", 
+                "UPDATE_DATE", 
+                "USER_ID"
+            ]
+        }, 
+        "FRS_PROGRAM_FACILITY": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "PRIMARY_NAME", 
+                "LOCATION_ADDRESS", 
+                "SUPPLEMENTAL_LOCATION", 
+                "CITY_NAME", 
+                "COUNTY_NAME", 
+                "FIPS_CODE", 
+                "STATE_CODE", 
+                "STATE_NAME", 
+                "COUNTRY_NAME", 
+                "POSTAL_CODE", 
+                "FEDERAL_FACILITY_CODE", 
+                "FEDERAL_AGENCY_CODE", 
+                "TRIBAL_LAND_CODE", 
+                "TRIBAL_LAND_NAME", 
+                "LEGISLATIVE_DIST_NUM", 
+                "EPA_REGION_CODE", 
+                "SITE_TYPE_NAME", 
+                "DATA_QUALITY_CODE", 
+                "LAST_REPORTED_DATE", 
+                "STD_NAME", 
+                "STD_LOC_ADDRESS", 
+                "STD_CITY_NAME", 
+                "STD_COUNTY_NAME", 
+                "ADDR_TYPE", 
+                "LINK_MTHD", 
+                "LOCATION_DESCRIPTION", 
+                "CREATE_DATE", 
+                "UPDATE_DATE", 
+                "USER_ID", 
+                "SENSITIVE_IND", 
+                "USER_COMMENT", 
+                "REGISTRY_ID", 
+                "PUBLIC_IND", 
+                "REFRESH_DATE", 
+                "SMALL_BUS_IND", 
+                "ENV_JUSTICE_CODE", 
+                "HUC_CODE_12", 
+                "HUC_CODE_8", 
+                "PARENT_PGM_SYS_ID", 
+                "STD_BASE_NAME", 
+                "STD_COUNTRY", 
+                "STD_COUNTY_FIPS", 
+                "STD_FULL_ADDRESS", 
+                "STD_HOUSE_NUMBER", 
+                "STD_POSTAL_CODE", 
+                "STD_PREFIX", 
+                "STD_STATE_CODE", 
+                "STD_STREET_NAME", 
+                "STD_STYPE_AFTER", 
+                "STD_STYPE_BEFORE", 
+                "STD_SUFFIX"
+            ]
+        }, 
+        "GEO_ASSIGN_ACC_LK": {
+            "columns": [
+                "COLLECT_MTH_CODE", 
+                "SCALE_LOWERBOUND", 
+                "SCALE_UPPERBOUND", 
+                "ASSIGN_ACC_VAL"
+            ]
+        }, 
+        "GEO_CCONVEYOR": {
+            "columns": [
+                "CONVEYOR", 
+                "PRIORITY"
+            ]
+        }, 
+        "GEO_COLLECT_MTH_LK": {
+            "columns": [
+                "COLLECT_MTH_CODE", 
+                "COLLECT_DESC"
+            ]
+        }, 
+        "GEO_FACILITY_POINT": {
+            "columns": [
+                "REGISTRY_ID", 
+                "OBJECTID", 
+                "SHAPE", 
+                "LATITUDE83", 
+                "LONGITUDE83", 
+                "TIMESTAMP"
+            ]
+        }, 
+        "GEO_GEOMETRIC_TYPE_LK": {
+            "columns": [
+                "GEOMETRIC_TYPE_CODE", 
+                "GEOMETRIC_TYPE_DESC"
+            ]
+        }, 
+        "GEO_HORIZ_DATUM_LK": {
+            "columns": [
+                "HDATUM_CODE", 
+                "HDATUM_DESC"
+            ]
+        }, 
+        "GEO_PGM_FACILITY_COORDINATE": {
+            "columns": [
+                "OBJECTID", 
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "SUB_ID", 
+                "LATITUDE", 
+                "LONGITUDE", 
+                "LATITUDE83", 
+                "LONGITUDE83", 
+                "SCALE", 
+                "ACCURACY_VALUE", 
+                "COLLECTION_DATE", 
+                "REF_POINT_CODE", 
+                "HDATUM_CODE", 
+                "SOURCE_CODE", 
+                "VMETHOD_CODE", 
+                "VDATUM_CODE", 
+                "VACCURACY", 
+                "VERTICAL_MEASURE", 
+                "GEOMETRIC_TYPE_CODE", 
+                "SUB_TYPE_CODE", 
+                "SOURCE", 
+                "COMMENT_TEXT", 
+                "SHAPE", 
+                "COMPLIANT_FLAG", 
+                "ACCURACY_SCORE", 
+                "CONVEYOR", 
+                "USER_ID", 
+                "TIMESTAMP", 
+                "COLLECT_MTD_CODE", 
+                "SUB_ENTITY_DESC"
+            ]
+        }, 
+        "GEO_REF_POINT_LK": {
+            "columns": [
+                "REF_POINT_CODE", 
+                "REF_POINT_DESC"
+            ]
+        }, 
+        "GEO_SOURCE_LK": {
+            "columns": [
+                "SOURCE_CODE", 
+                "SOURCE_DESC"
+            ]
+        }, 
+        "GEO_SUB_ID_REF": {
+            "columns": [
+                "PGM_SYS_ACRNM", 
+                "SUB_ID_SEQUENCE", 
+                "TAB_COL_NAME"
+            ]
+        }, 
+        "GEO_SUB_TYPE_LK": {
+            "columns": [
+                "SUB_TYPE_CODE", 
+                "SUB_TYPE_DESC"
+            ]
+        }, 
+        "GEO_VERIFY_LK": {
+            "columns": [
+                "VERIFY_CODE", 
+                "VERIFY_DESC", 
+                "VERIFY_WEIGHT"
+            ]
+        }, 
+        "GEO_VERT_DATUM_LK": {
+            "columns": [
+                "VDATUM_CODE", 
+                "VDATUM_DESC"
+            ]
+        }, 
+        "GEO_VERT_METHOD_LK": {
+            "columns": [
+                "VMETHOD_CODE", 
+                "VMETHOD_DESC"
+            ]
+        }, 
+        "MY_GEO_FACILITY_POINT": {
+            "columns": [
+                "REGISTRY_ID", 
+                "PRIMARY_NAME", 
+                "CITY_NAME", 
+                "COUNTY_NAME", 
+                "STATE_CODE", 
+                "POSTAL_CODE", 
+                "COUNTRY_NAME", 
+                "OBJECTID", 
+                "PGM_SYS_ACRNM", 
+                "PGM_SYS_ID", 
+                "LATITUDE83", 
+                "LONGITUDE83", 
+                "SHAPE", 
+                "CONVEYOR", 
+                "HDATUM_DESC", 
+                "REF_POINT_DESC", 
+                "SOURCE_DESC", 
+                "SCALE", 
+                "ACCURACY_VALUE", 
+                "ACCURACY_SCORE", 
+                "DERIVED_ZIP", 
+                "DERIVED_STATE", 
+                "COLLECT_MTH_DESC", 
+                "DERIVED_CB_2010", 
+                "DERIVED_CD_112", 
+                "DERIVED_CITY", 
+                "DERIVED_COUNTY", 
+                "DERIVED_FIPS", 
+                "DERIVED_HUC", 
+                "DERIVED_WBD", 
+                "FIPS_ CODE", 
+                "LOCATION_ ADDRESS", 
+                "OZONE_8HR_1997_ AREA_NAME", 
+                "OZONE_8HR_2008_ AREA_NAME", 
+                "PB_2008_AREA_NAME", 
+                "PM25_1997_AREA_ NAME", 
+                "PM25_2006_AREA_ NAME", 
+                "VERTICAL_MEASURE"
+            ]
+        }, 
+        "V_GEO_COORDINATE_ALL": {
+            "columns": [
+                "PGM_SYS_ID", 
+                "PGM_SYS_ACRNM", 
+                "PRIMARY_NAME", 
+                "CITY_NAME", 
+                "COUNTY_NAME", 
+                "STATE_CODE", 
+                "POSTAL_CODE", 
+                "COUNTRY_NAME", 
+                "OBJECTID", 
+                "SUB_ID", 
+                "LATITUDE83", 
+                "LONGITUDE83", 
+                "SHAPE", 
+                "CONVEYOR", 
+                "HDATUM_DESC", 
+                "REF_POINT_DESC", 
+                "SOURCE_DESC", 
+                "SCALE", 
+                "ACCURACY_VALUE", 
+                "ACCURACY_SCORE", 
+                "TIMESTAMP", 
+                "DERIVED_ZIP", 
+                "DERIVED_STATE", 
+                "REGISTRY_ID", 
+                "REP_LATITUDE83", 
+                "REP_LONGITUDE83", 
+                "REP_OBJECTID", 
+                "REP_TIMESTAMP", 
+                "COLLECT_MTH_DESC", 
+                "DERIVED_CB_2010", 
+                "DERIVED_CD_112", 
+                "DERIVED_CITY", 
+                "DERIVED_COUNTY", 
+                "DERIVED_FIPS", 
+                "DERIVED_HUC", 
+                "DERIVED_WBD", 
+                "FIPS_ CODE", 
+                "LOCATION_ ADDRESS", 
+                "OZONE_8HR_1997_ AREA_NAME", 
+                "OZONE_8HR_2008_ AREA_NAME", 
+                "PB_2008_AREA_NAME", 
+                "PM25_1997_AREA_ NAME", 
+                "PM25_2006_AREA_ NAME", 
+                "VERTICAL_MEASURE"
+            ]
+        }
+    }, 
+    "https://www.epa.gov/enviro/sems-model": {
+        "SEMS active sites": {
+            "columns": [
+                "FF", 
+                "LATITUDE", 
+                "LONGITUDE", 
+                "NON_NPL_STATUS", 
+                "NPL", 
+                "RG", 
+                "SITE_CITY_NAME", 
+                "SITE_CNTY_NAME", 
+                "SITE_CONG_DISTRICT", 
+                "SITE_EPA_ID", 
+                "SITE_FIPS_CODE", 
+                "SITE_ID", 
+                "SITE_NAME", 
+                "SITE_STATE", 
+                "SITE_STRT_ADRS1", 
+                "SITE_STRT_ADRS2", 
+                "SITE_ZIP_CODE"
+            ]
+        }, 
+        "SEMS archived sites": {
+            "columns": [
+                "FF", 
+                "LATITUDE", 
+                "LONGITUDE", 
+                "NON_NPL_STATUS", 
+                "NPL", 
+                "RG", 
+                "SITE_CITY_NAME", 
+                "SITE_CNTY_NAME", 
+                "SITE_CONG_DISTRICT", 
+                "SITE_EPA_ID", 
+                "SITE_FIPS_CODE", 
+                "SITE_ID", 
+                "SITE_NAME", 
+                "SITE_STATE", 
+                "SITE_STRT_ADRS1", 
+                "SITE_STRT_ADRS2", 
+                "SITE_ZIP_CODE"
+            ]
+        }
+    }
+}
