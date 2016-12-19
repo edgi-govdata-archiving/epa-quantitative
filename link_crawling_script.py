@@ -2,7 +2,22 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-url_list = ['https://www.epa.gov/enviro/frs-physical-data-model','https://www.epa.gov/enviro/sems-model']
+def desc_unwrapper(url):
+
+	if (url.find("http") == -1):
+		url = "https:" + url
+	
+	data = requests.get(url).text
+	desc_start = data.find("Description:")
+	desc_end = data[desc_start:].find("\n")
+	
+	description = str(data[desc_start+17:desc_start+desc_end])
+	
+	return description
+
+#url_list = ['https://www.epa.gov/enviro/frs-physical-data-model','https://www.epa.gov/enviro/sems-model']
+url_list = ['https://www.epa.gov/enviro/sems-model']
+
 data_dic= {}
 for url in url_list:
 	url_sub_list=[url]
@@ -37,6 +52,8 @@ for url in url_list:
 
 				column_link_list = [link for link in links_list if (link.find("/enviro/EF_METADATA_HTML") != -1)]
 				column_names = [None]*len(column_link_list)
+				column_descriptions = [None]*len(column_link_list)
+
 				
 				i = 0
 				for column in column_link_list:
@@ -44,8 +61,11 @@ for url in url_list:
 					end_column_index = column.find("&p_table_name")
 					column_name = column[start_column_index:end_column_index]
 					column_names[i] = column_name
+					column_descriptions[i] = desc_unwrapper(column)
 					i+=1
+				
 				data_dic[url][table_names[table_name_index]]["columns"] = column_names
+				data_dic[url][table_names[table_name_index]]["column descriptions"] = column_descriptions
 				table_name_index += 1
 			else:
 				if (table_link.find("http") != -1):
@@ -57,4 +77,4 @@ print(data_dic)
 
 filename = "crawling_output.json"
 with open(filename,'w') as f:
-    json.dump(data_dic, f, ensure_ascii=False, indent=4, sort_keys=True)
+	json.dump(data_dic, f, ensure_ascii=False, indent=4, sort_keys=True)
